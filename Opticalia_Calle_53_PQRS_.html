@@ -84,11 +84,11 @@ textarea{min-height:126px;resize:vertical}
 <div class="actions"><button class="btn primary" type="button" id="whatsapp">Enviar solicitud por WhatsApp</button></div>
 <p class="send-note"><span aria-hidden="true">✓</span> Se abrirá WhatsApp con la información diligenciada. Revisa el contenido y pulsa enviar para radicar tu solicitud.</p>
 </form></main>
-<div class="contact"><span>WhatsApp PQRS: <a href="https://wa.me/573175696502">317 569 6502</a></span><span>Av. Calle 53 #73-62, local 3, Normandía</span></div>
+<div class="contact"><span>WhatsApp PQRS: <a href="https://wa.me/573175696502">318 417 1223</a></span><span>Av. Calle 53 #73-62, local 3, Normandía</span></div>
 </div><div class="foot">Opticalia Calle 53 · Atención al cliente</div></div>
 <script>
 const val=id=>(document.getElementById(id).value||'No indicado').trim();
 function buildMessage(){const form=document.getElementById('pqrsForm');if(!form.reportValidity())return null;return `PQRS - OPTICALIA CALLE 53\n\nTipo de solicitud: ${val('tipo')}\nFecha de los hechos: ${val('fecha')}\nNombre completo: ${val('nombre')}\nDocumento: ${val('documento')}\nCelular: ${val('celular')}\nCorreo: ${val('correo')}\nAsunto: ${val('asunto')}\n\nDescripción de los hechos/solicitud:\n${val('hechos')}\n\nRespuesta o solución esperada:\n${val('solucion')}\n\nSoportes relacionados: ${val('soportes')}\n\nAutorización de tratamiento de datos: Sí`}
-document.getElementById('whatsapp').addEventListener('click',()=>{const m=buildMessage();if(m)window.open('https://wa.me/573175696502?text='+encodeURIComponent(m),'_blank','noopener')});
+document.getElementById('whatsapp').addEventListener('click',()=>{const m=buildMessage();if(m)window.open('https://wa.me/573184171223?text='+encodeURIComponent(m),'_blank','noopener')});
 
 </script></body></html>
